@@ -1,17 +1,25 @@
 import { useState } from "react";
 import profilePic from "../assets/profile_pic.JPG";
 import SideBar from "../layouts/SideBar";
+import Body from "../layouts/Body";
+import { FiMenu, FiX } from "react-icons/fi";
 
 const Resume = () => {
   const [sidebar, setSidebar] = useState(true);
   return (
-    <div className="flex">
+    <div className="flex fixed w-full h-full">
       <div
-        className="h-10 w-10 right-3 top-7 absolute bg-red-500 rounded-full"
+        className="h-10 w-10 z-10 right-7 top-7 fixed bg-blue-500 rounded-full justify-center items-center flex cursor-pointer"
         onClick={() => setSidebar(!sidebar)}
-      />
+      >
+        {!sidebar ? (
+          <FiMenu className="stroke-white" />
+        ) : (
+          <FiX className="stroke-white" />
+        )}
+      </div>
       <SideBar sidebar={sidebar} profilePic={profilePic} />
-      <div>Content</div>
+      <Body />
     </div>
   );
 };

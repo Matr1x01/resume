@@ -75,9 +75,9 @@ const SideBar = ({ sidebar, profilePic }) => {
     <div
       className={`${
         sidebar ? "w-72" : "w-0"
-      } duration-300 h-screen bg-slate-800`}
+      } duration-300 h-screen bg-slate-800 sticky top-0 z-10`}
     >
-      <div className={`${!sidebar ? "hidden" : ""} flex flex-col`}>
+      <div className={`${!sidebar ? "hidden" : ""} flex flex-col w-full`}>
         <img
           src={profilePic}
           alt="profile pic"
