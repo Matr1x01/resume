@@ -6,7 +6,7 @@ import {
   FiFile,
   FiLayout,
   FiMessageCircle,
-  FiServer,
+  FiCode,
 } from "react-icons/fi";
 import { FaGithub, FaLinkedinIn, FaFacebookF } from "react-icons/fa";
 
@@ -25,6 +25,11 @@ const menus = [
     iconActive: <FiUser className={activeMenuIconCss} />,
   },
   {
+    title: "Skills",
+    iconInactive: <FiCode className={inactiveMenuIconCss} />,
+    iconActive: <FiCode className={activeMenuIconCss} />,
+  },
+  {
     title: "Resume",
     iconInactive: <FiFile className={inactiveMenuIconCss} />,
     iconActive: <FiFile className={activeMenuIconCss} />,
@@ -33,11 +38,6 @@ const menus = [
     title: "Protfolio",
     iconInactive: <FiLayout className={inactiveMenuIconCss} />,
     iconActive: <FiLayout className={activeMenuIconCss} />,
-  },
-  {
-    title: "Services",
-    iconInactive: <FiServer className={inactiveMenuIconCss} />,
-    iconActive: <FiServer className={activeMenuIconCss} />,
   },
   {
     title: "Contact",
@@ -75,7 +75,7 @@ const SideBar = ({ sidebar, profilePic }) => {
     <div
       className={`${
         sidebar ? "w-72" : "w-0"
-      } duration-300 h-screen bg-slate-800 sticky top-0 z-10`}
+      } duration-300 h-screen bg-slate-800 fixed sm:sticky top-0 z-10`}
     >
       <div className={`${!sidebar ? "hidden" : ""} flex flex-col w-full`}>
         <img

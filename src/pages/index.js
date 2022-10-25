@@ -3,6 +3,7 @@ import profilePic from "../assets/profile_pic.JPG";
 import SideBar from "../layouts/SideBar";
 import Body from "../layouts/Body";
 import { FiMenu, FiX } from "react-icons/fi";
+import React from "react";
 
 const Resume = () => {
   const [sidebar, setSidebar] = useState(true);
