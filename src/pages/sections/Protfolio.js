@@ -2,7 +2,7 @@ import React from "react";
 import CategorySelector from "../../components/CategorySelector";
 import ProjectBox from "../../components/ProjectBox";
 
-const Protfolio = ({ projects, categories }) => {
+const Protfolio = ({ projects, categories, cv }) => {
   const [filteredProjects, setFilteredProjects] = React.useState(projects);
   const onCategorySelect = (category) => {
     if (category === "ALL") {
@@ -46,11 +46,11 @@ const Protfolio = ({ projects, categories }) => {
             </div>
           </div>
         </div>
-        <div className="flex w-full">
+        <a href={cv} download="cv.pdf" className="flex w-full">
           <div className="px-8 py-2 m-auto rounded-lg bg-blue-600 hover:bg-blue-500">
             <span className="text-xl text-white">Download CV</span>
           </div>
-        </div>
+        </a>
       </div>
     </div>
   );

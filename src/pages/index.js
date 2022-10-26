@@ -22,6 +22,8 @@ import Contact from "./sections/Contact";
 import profilePic from "../assets/profile_pic.JPG";
 import cover from "../assets/cover.jpg";
 import Resume from "./sections/Resume";
+import cv from "../assets/cv.pdf";
+
 const inactiveMenuIconCss = "stroke-gray-300 h-6 w-6 my-auto";
 const activeMenuIconCss = "stroke-blue-500 h-6 w-6 my-auto";
 
@@ -112,7 +114,7 @@ const ResumeSite = () => {
         </div>
 
         <div id="protfolio">
-          <Protfolio categories={categories} projects={projects} />
+          <Protfolio categories={categories} projects={projects} cv={cv} />
         </div>
         <div id="contact">
           <Contact

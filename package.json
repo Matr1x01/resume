@@ -1,4 +1,5 @@
 {
+  "homepage": "http://Matr1x01.github.io/resume_site",
   "name": "resume_site",
   "version": "0.1.0",
   "private": true,
@@ -14,6 +15,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -42,6 +45,7 @@
     "babel-loader": "^8.2.3",
     "chromatic": "^6.5.3",
     "eslint": "8.11.0",
+    "gh-pages": "^4.0.0",
     "lint-staged": "^12.3.7",
     "postcss": "^8.4.18",
     "prettier": "2.6.0",
