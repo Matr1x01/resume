@@ -3,7 +3,7 @@ import ListTile from "../../components/ListTile";
 const About = ({ aboutText, profilePic }) => {
   return (
     <div className="h-auto w-full bg-white p-4 flex flex-col">
-      <div className="w-full xl:w-2/3 mx-auto">
+      <div className="max-w-5xl w-full self-center flex flex-col">
         <div className="mt-8 flex flex-col">
           <span className="text-3xl font-semibold text-blue-900">About</span>
           <div className="line-1 bg-blue-300" />

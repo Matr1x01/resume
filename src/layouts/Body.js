@@ -5,7 +5,19 @@ import useAutoTypingTexts from "../hooks/useAutoTypingTexts";
 import About from "../pages/sections/About";
 import Home from "../pages/sections/Home";
 import Skills from "../pages/sections/Skills";
+import Resume from "../pages/sections/Resume";
+import niyontronLogo from "../assets/niyontron.svg";
+import Protfolio from "../pages/sections/Protfolio";
+import Contact from "../pages/sections/Contact";
 
+const temp = [
+  { logo: niyontronLogo, link: "" },
+  { logo: niyontronLogo, link: "" },
+  { logo: niyontronLogo, link: "" },
+  { logo: niyontronLogo, link: "" },
+  { logo: niyontronLogo, link: "" },
+  { logo: niyontronLogo, link: "" },
+];
 const Body = () => {
   const name = "Mozharul Haq";
   const aboutText =
@@ -20,19 +32,14 @@ const Body = () => {
       <img
         src={cover}
         alt="cover"
-        className="absolute -z-20 overflow-clip object-cover h-screen w-full min-h-min min-w-min"
+        className="absolute -z-20 overflow-clip object-cover h-screen w-full"
       />
       <Home name={name} autoText={autoText} />
       <About aboutText={aboutText} profilePic={profilePic} />
       <Skills />
-      <div className="h-auto w-full bg-white p-4 flex flex-col">
-        <div className="w-full xl:w-2/3 mx-auto">
-          <div className="flex flex-col">
-            <span className="text-3xl font-semibold text-blue-900">Resume</span>
-            <div className="line-1 bg-blue-300" />
-          </div>
-        </div>
-      </div>
+      <Resume />
+      <Protfolio projects={temp} />
+      <Contact />
     </div>
   );
 };

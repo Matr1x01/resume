@@ -9,6 +9,7 @@ import {
   FiCode,
 } from "react-icons/fi";
 import { FaGithub, FaLinkedinIn, FaFacebookF } from "react-icons/fa";
+import MenueTile from "../components/MenuTile";
 
 const inactiveMenuIconCss = "stroke-gray-300 h-6 w-6 my-auto";
 const activeMenuIconCss = "stroke-blue-500 h-6 w-6 my-auto";
@@ -46,36 +47,12 @@ const menus = [
   },
 ];
 
-const MenueTile = ({ title, iconActive, iconInactive, active }) => {
-  const [hovering, setHovering] = useState(false);
-  return (
-    <div
-      className="flex flex-row my-4 pl-8"
-      onPointerEnter={() => {
-        setHovering(!hovering);
-      }}
-      onPointerLeave={() => {
-        setHovering(!hovering);
-      }}
-    >
-      {active || hovering ? iconActive : iconInactive}
-      <span
-        className={`mx-3 ${
-          active || hovering ? "text-white" : "text-gray-300"
-        }  my-auto cursor-pointer`}
-      >
-        {title}
-      </span>
-    </div>
-  );
-};
-
 const SideBar = ({ sidebar, profilePic }) => {
   return (
     <div
       className={`${
         sidebar ? "w-72" : "w-0"
-      } duration-300 h-screen bg-slate-800 fixed sm:sticky top-0 z-10`}
+      } duration-300 h-screen bg-slate-800 fixed sm:sticky top-0 z-40`}
     >
       <div className={`${!sidebar ? "hidden" : ""} flex flex-col w-full`}>
         <img
@@ -112,7 +89,7 @@ const SideBar = ({ sidebar, profilePic }) => {
           {menus.map((menu, i) => (
             <MenueTile
               key={i}
-              active={i === 2}
+              active={i === 0}
               iconActive={menu.iconActive}
               iconInactive={menu.iconInactive}
               title={menu.title}

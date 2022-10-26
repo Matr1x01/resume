@@ -8,7 +8,7 @@ import React from "react";
 const Resume = () => {
   const [sidebar, setSidebar] = useState(true);
   return (
-    <div className="flex fixed w-full h-full">
+    <div className="flex fixed w-full h-full select-none">
       <div
         className="h-10 w-10 z-10 right-7 top-7 fixed bg-blue-500 rounded-full justify-center items-center flex cursor-pointer"
         onClick={() => setSidebar(!sidebar)}
