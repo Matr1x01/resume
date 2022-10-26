@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import ContactCircles from "../components/ContactCircle";
 import {
   FiUser,
@@ -13,6 +13,21 @@ import MenueTile from "../components/MenuTile";
 
 const inactiveMenuIconCss = "stroke-gray-300 h-6 w-6 my-auto";
 const activeMenuIconCss = "stroke-blue-500 h-6 w-6 my-auto";
+
+const contacts = [
+  {
+    avatar: <FaLinkedinIn className=" fill-white h-6 w-6 my-auto mx-auto" />,
+    link: "https://www.linkedin.com/in/mazharul-haq-b602aa21a/",
+  },
+  {
+    avatar: <FaGithub className="fill-white h-6 w-6 my-auto mx-auto" />,
+    link: "https://github.com/Matr1x01",
+  },
+  {
+    avatar: <FaFacebookF className="fill-white h-6 w-6 my-auto mx-auto" />,
+    link: "https://www.facebook.com/a.silent.man8/",
+  },
+];
 
 const menus = [
   {
@@ -52,7 +67,7 @@ const SideBar = ({ sidebar, profilePic }) => {
     <div
       className={`${
         sidebar ? "w-72" : "w-0"
-      } duration-300 h-screen bg-slate-800 fixed sm:sticky top-0 z-40`}
+      } duration-300 h-screen bg-slate-800 fixed sm:sticky top-0 z-40 select-none`}
     >
       <div className={`${!sidebar ? "hidden" : ""} flex flex-col w-full`}>
         <img
@@ -63,28 +78,7 @@ const SideBar = ({ sidebar, profilePic }) => {
         <span className="my-4 text-2xl text-white font-semibold text-center mx-auto cursor-pointer">
           Mozharul Haq
         </span>
-        <ContactCircles
-          contacts={[
-            {
-              avatar: (
-                <FaLinkedinIn className=" fill-white h-6 w-6 my-auto mx-auto" />
-              ),
-              link: "s",
-            },
-            {
-              avatar: (
-                <FaGithub className="fill-white h-6 w-6 my-auto mx-auto" />
-              ),
-              link: "s",
-            },
-            {
-              avatar: (
-                <FaFacebookF className="fill-white h-6 w-6 my-auto mx-auto" />
-              ),
-              link: "s",
-            },
-          ]}
-        />
+        <ContactCircles contacts={contacts} />
         <div className="flex flex-col mt-6">
           {menus.map((menu, i) => (
             <MenueTile
