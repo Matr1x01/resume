@@ -1,7 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 
 const CategorySelector = ({ onSelect, categories }) => {
-  const [selectedCategory, setSelectedCategory] = React.useState("ALL");
+  const [selectedCategory, setSelectedCategory] = useState("ALL");
   const _onSelect = (category) => {
     setSelectedCategory(category);
     onSelect(category);
@@ -12,7 +12,7 @@ const CategorySelector = ({ onSelect, categories }) => {
         onClick={() => _onSelect("ALL")}
         className={`${
           selectedCategory === "ALL" ? "text-blue-600" : "text-gray-900"
-        } mx-auto md:mx-2 font-bold text-gray-900 hover:text-blue-600 cursor-pointer select-none`}
+        } mx-auto md:mx-2 font-bold hover:text-blue-600 cursor-pointer select-none`}
       >
         ALL
       </span>
@@ -23,7 +23,7 @@ const CategorySelector = ({ onSelect, categories }) => {
             onClick={() => _onSelect(category)}
             className={`${
               selectedCategory === category ? "text-blue-600" : "text-gray-900"
-            } mx-auto md:mx-2 font-bold text-gray-900 hover:text-blue-600 cursor-pointer select-none`}
+            } mx-auto md:mx-2 font-bold hover:text-blue-600 cursor-pointer select-none`}
           >
             {category}
           </span>

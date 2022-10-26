@@ -1,38 +1,9 @@
 import { FiMapPin, FiMessageCircle, FiPhoneCall } from "react-icons/fi";
 import React from "react";
+import CustomInput from "../../components/CustomInput";
+import ContactInfo from "../../components/ContactInfo";
 
-const ContactInfo = ({ icon, title, content }) => {
-  return (
-    <div className="flex flex-row my-4">
-      <div className="flex w-12 h-12 bg-blue-300 rounded-full mr-4">{icon}</div>
-      <div className="flex flex-col">
-        <span className="text-xl font-semibold">{title}:</span>
-        <span>{content}</span>
-      </div>
-    </div>
-  );
-};
-
-const CustomInput = ({ label, placeholder }) => {
-  return (
-    <div>
-      <label className="block">
-        <span className="block text-sm font-medium text-slate-700">
-          {label}
-        </span>
-        <input
-          type="text"
-          placeholder={placeholder}
-          className="mt-1 block w-full px-3 py-2 bg-white border border-slate-300 rounded-md text-sm shadow-sm placeholder-slate-400
-  focus:outline-none focus:border-sky-500 
-  "
-        />
-      </label>
-    </div>
-  );
-};
-
-const Contact = () => {
+const Contact = ({ location, phoneNumber, email }) => {
   return (
     <div className="h-auto w-full bg-white flex flex-col p-8">
       <div className="flex flex-col w-full max-w-5xl self-center">
@@ -45,17 +16,17 @@ const Contact = () => {
             <ContactInfo
               icon={<FiMapPin className="text-white m-auto h-8 w-8" />}
               title="Location"
-              content="Dhaka"
+              content={location}
             />
             <ContactInfo
               icon={<FiMessageCircle className="text-white m-auto h-8 w-8" />}
               title="Email"
-              content="Dhaka"
+              content={email}
             />
             <ContactInfo
               icon={<FiPhoneCall className="text-white m-auto h-8 w-8" />}
               title="Phone"
-              content="Dhaka"
+              content={phoneNumber}
             />
           </div>
           <div className="w-full lg:w-2/3 lg:ml-3 p-6 mt-6 shadow-lg flex flex-col">

@@ -1,6 +1,18 @@
 import React from "react";
+import CategorySelector from "../../components/CategorySelector";
 import ProjectBox from "../../components/ProjectBox";
-const Protfolio = ({ projects }) => {
+
+const Protfolio = ({ projects, categories }) => {
+  const [filteredProjects, setFilteredProjects] = React.useState(projects);
+  const onCategorySelect = (category) => {
+    if (category === "ALL") {
+      setFilteredProjects(projects);
+    } else {
+      setFilteredProjects(
+        projects.filter((project) => project.category === category)
+      );
+    }
+  };
   return (
     <div className="h-auto w-full bg-white p-4 flex flex-col">
       <div className="flex flex-col w-full max-w-5xl self-center">
@@ -11,31 +23,22 @@ const Protfolio = ({ projects }) => {
           <div className="line-1 bg-blue-300" />
         </div>
         <div className="flex flex-col mt-4 ">
-          <div className="flex flex-row mx-auto">
-            <span className="mx-2 font-bold text-gray-900 hover:text-blue-600 cursor-pointer select-none">
-              All
-            </span>
-            <span className="mx-2 font-bold text-gray-900 hover:text-blue-600 cursor-pointer select-none">
-              SOFTWERE ENGINEERING
-            </span>
-            <span className="mx-2 font-bold text-gray-900 hover:text-blue-600 cursor-pointer select-none">
-              MACHINE LEARNING
-            </span>
-            <span className="mx-2 font-bold text-gray-900 hover:text-blue-600 cursor-pointer select-none">
-              OTHER
-            </span>
-          </div>
+          <CategorySelector
+            categories={categories}
+            onSelect={onCategorySelect}
+          />
           <div className="flex">
             <div className="flex flex-col md:flex-row md:flex-wrap  mt-4 py-8 mx-auto">
-              {projects.map((project) => {
+              {filteredProjects.map((project, i) => {
                 return (
-                  <div className="mx-auto md:mx-0">
+                  <div key={i} className="mx-auto md:mx-0">
                     <ProjectBox
-                      image={project.logo}
+                      image={project.image}
                       link={project.link}
                       title={project.title}
                       description={project.description}
                       github={project.github}
+                      category={project.category}
                     />
                   </div>
                 );

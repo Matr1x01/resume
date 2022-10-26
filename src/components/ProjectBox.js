@@ -4,10 +4,13 @@ import { FiGithub, FiLink } from "react-icons/fi";
 const ProjectBox = ({ title, description, link, github, image }) => {
   const [hovering, setHovering] = React.useState(false);
   return (
-    <div className="object-center h-64 w-64 relative flex">
-      <img src={image} alt="niyontron" className="my-auto mx-auto h-48 w-48" />
+    <div className="h-64 w-64 relative flex ">
+      <div className="m-auto h-60 w-60 p-4 shadow-2xl flex">
+        <img src={image} alt={title} className="object-scale-down m-auto" />
+      </div>
+
       <div
-        className="h-60 w-60 bg-gray-400/[0] absolute hover:bg-gray-400/[.3] flex flex-col-reverse"
+        className="top-2 left-2 h-60 w-60 bg-gray-400/[0] absolute hover:bg-gray-400/[.3] flex flex-col-reverse"
         onMouseEnter={() => {
           setHovering(!hovering);
         }}
@@ -35,6 +38,9 @@ const ProjectBox = ({ title, description, link, github, image }) => {
             />
           </a>
         </div>
+        <span className={`${hovering ? "block" : "hidden"} text-blue-400  m-1`}>
+          {title}
+        </span>
       </div>
     </div>
   );
