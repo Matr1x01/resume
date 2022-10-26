@@ -28,7 +28,7 @@ const inactiveMenuIconCss = "stroke-gray-300 h-6 w-6 my-auto";
 const activeMenuIconCss = "stroke-blue-500 h-6 w-6 my-auto";
 
 const ResumeSite = () => {
-  const [sidebar, setSidebar] = useState(true);
+  const [sidebar, setSidebar] = useState(false);
   const autoText = useAutoTypingTexts({
     strings: content.autoTypingStrings,
     writingSpeed: config.autoTypingSpeed,
