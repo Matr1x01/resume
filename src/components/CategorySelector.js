@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 const CategorySelector = ({ onSelect, categories }) => {
   const [selectedCategory, setSelectedCategory] = useState("ALL");
+
   const _onSelect = (category) => {
     setSelectedCategory(category);
     onSelect(category);

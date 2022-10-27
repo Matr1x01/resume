@@ -20,9 +20,11 @@ import Skills from "./sections/Skills";
 import Protfolio from "./sections/Protfolio";
 import Contact from "./sections/Contact";
 import profilePic from "../assets/profile_pic.JPG";
-import cover from "../assets/cover.jpg";
+import cover_mobile from "../assets/cover-mobile.jpg";
+import cover_desktop from "../assets/cover-desktop.jpg";
 import Resume from "./sections/Resume";
 import cv from "../assets/cv.pdf";
+import useWindowDimensions from "../hooks/useWindowDimensions";
 
 const inactiveMenuIconCss = "stroke-gray-300 h-6 w-6 my-auto";
 const activeMenuIconCss = "stroke-blue-500 h-6 w-6 my-auto";
@@ -35,6 +37,7 @@ const ResumeSite = () => {
     deletingSpeed: config.autoDeletingSpeed,
     waitTime: config.autoWaitTime,
   });
+  const { height, width } = useWindowDimensions();
 
   const menus = [
     {
@@ -96,7 +99,7 @@ const ResumeSite = () => {
 
       <div className="flex-1 flex-col overflow-y-auto">
         <img
-          src={cover}
+          src={width < 900 ? cover_mobile : cover_desktop}
           alt="cover"
           className="absolute -z-20 overflow-clip object-cover h-screen w-full"
         />

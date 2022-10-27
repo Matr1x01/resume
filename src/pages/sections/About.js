@@ -15,7 +15,7 @@ const About = ({ profilePic, content }) => {
           <div className="max-w-md w-full mx-auto mb-8 sm:mb-0">
             <img src={profilePic} alt="pic" />
           </div>
-          <div className="w-2/3 px-4 flex lg:flex-row flex-col mt-6 md:mt-0">
+          <div className="w-full lg:w-2/3 px-4 flex lg:flex-row flex-col mt-6 lg:mt-0">
             <div className="flex flex-col w-full">
               <ListTile title="Phone Number" content={content.phoneNumber} />
               <ListTile title="Email" content={content.email} />
