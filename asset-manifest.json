@@ -1,10 +1,11 @@
 {
   "files": {
-    "main.css": "/resume_site/static/css/main.67881467.css",
-    "main.js": "/resume_site/static/js/main.93ea08c1.js",
+    "main.css": "/resume_site/static/css/main.889b6ecd.css",
+    "main.js": "/resume_site/static/js/main.df27491e.js",
     "static/js/787.bdde258d.chunk.js": "/resume_site/static/js/787.bdde258d.chunk.js",
-    "static/media/cover.jpg": "/resume_site/static/media/cover.573210fb3bfeb68b9f0d.jpg",
+    "static/media/cover-desktop.jpg": "/resume_site/static/media/cover-desktop.630c724bf91e026425a9.jpg",
     "static/media/profile_pic.JPG": "/resume_site/static/media/profile_pic.58eaf3751640040ea6e9.JPG",
+    "static/media/cover-mobile.jpg": "/resume_site/static/media/cover-mobile.9c0e587b1507cb4d84fe.jpg",
     "static/media/cv.pdf": "/resume_site/static/media/cv.1db826e04980e594c6fa.pdf",
     "static/media/Scikit_learn.png": "/resume_site/static/media/Scikit_learn.bfb987221ae5f83d782b.png",
     "static/media/python.png": "/resume_site/static/media/python.98c0a18c426936f61962.png",
@@ -31,12 +32,12 @@
     "static/media/nextjs.png": "/resume_site/static/media/nextjs.6db19b31cc0a2f63cff4.png",
     "static/media/niyontron.svg": "/resume_site/static/media/niyontron.fdf8d8e52ab2a81d796cd079b676e8ee.svg",
     "index.html": "/resume_site/index.html",
-    "main.67881467.css.map": "/resume_site/static/css/main.67881467.css.map",
-    "main.93ea08c1.js.map": "/resume_site/static/js/main.93ea08c1.js.map",
+    "main.889b6ecd.css.map": "/resume_site/static/css/main.889b6ecd.css.map",
+    "main.df27491e.js.map": "/resume_site/static/js/main.df27491e.js.map",
     "787.bdde258d.chunk.js.map": "/resume_site/static/js/787.bdde258d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.67881467.css",
-    "static/js/main.93ea08c1.js"
+    "static/css/main.889b6ecd.css",
+    "static/js/main.df27491e.js"
   ]
 }
