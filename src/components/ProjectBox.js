@@ -8,7 +8,12 @@ const ProjectBox = ({ title, description, link, github, image, category }) => {
     <Fade>
       <div className={`h-64 w-64 relative flex`}>
         <div className="m-auto h-60 w-60 p-4 shadow-2xl flex">
-          <img src={image} alt={title} className="object-scale-down m-auto" />
+          <img
+            src={image}
+            alt={title}
+            loading="lazy"
+            className="object-scale-down m-auto"
+          />
         </div>
 
         <div

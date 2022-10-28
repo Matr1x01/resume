@@ -28,6 +28,7 @@ const SideBar = ({ sidebar, profilePic, name, menus }) => {
         <img
           src={profilePic}
           alt="profile pic"
+          loading="lazy"
           className="mx-auto mt-8 w-1/2 h-1/2 rounded-full border-8 border-slate-600"
         />
         <span className="my-4 text-2xl text-white font-semibold text-center mx-auto cursor-pointer">

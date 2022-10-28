@@ -16,7 +16,7 @@ const Resume = () => {
             <InfoBody>
               <div className="flex flex-col pb-4">
                 <span className="text-xl font-bold text-stone-900">
-                  BACHELOR OF SCIENCE IN COMPUTER SCIENCE & SOFTWARE ENGINEERING
+                  BACHELOR OF SCIENCE IN COMPUTER SCIENCE & ENGINEERING
                 </span>
                 <div className="my-4">
                   <span className="p-2 bg-slate-300 font-semibold text-gray-700">

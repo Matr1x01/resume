@@ -55,8 +55,8 @@ focus:outline-none focus:border-sky-500
               </label>
             </div>
             <div className="flex w-full">
-              <div className="px-8 py-2 m-auto rounded-lg bg-blue-600 hover:bg-blue-500">
-                <span className="text-xl text-white">Send Message</span>
+              <div className="select-none cursor-pointer px-8 py-2 m-auto rounded-lg bg-blue-600 hover:bg-blue-500">
+                <span className=" text-xl text-white">Send Message</span>
               </div>
             </div>
           </div>
