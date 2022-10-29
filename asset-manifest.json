@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/resume_site/static/css/main.9d90d204.css",
-    "main.js": "/resume_site/static/js/main.5b9e7ec8.js",
+    "main.js": "/resume_site/static/js/main.7a42f92f.js",
     "static/js/787.bdde258d.chunk.js": "/resume_site/static/js/787.bdde258d.chunk.js",
     "static/media/cover-desktop.jpg": "/resume_site/static/media/cover-desktop.630c724bf91e026425a9.jpg",
     "static/media/profile_pic.JPG": "/resume_site/static/media/profile_pic.58eaf3751640040ea6e9.JPG",
@@ -33,11 +33,11 @@
     "static/media/niyontron.svg": "/resume_site/static/media/niyontron.fdf8d8e52ab2a81d796cd079b676e8ee.svg",
     "index.html": "/resume_site/index.html",
     "main.9d90d204.css.map": "/resume_site/static/css/main.9d90d204.css.map",
-    "main.5b9e7ec8.js.map": "/resume_site/static/js/main.5b9e7ec8.js.map",
+    "main.7a42f92f.js.map": "/resume_site/static/js/main.7a42f92f.js.map",
     "787.bdde258d.chunk.js.map": "/resume_site/static/js/787.bdde258d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9d90d204.css",
-    "static/js/main.5b9e7ec8.js"
+    "static/js/main.7a42f92f.js"
   ]
 }
