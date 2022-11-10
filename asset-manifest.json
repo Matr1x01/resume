@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.css": "/resume_site/static/css/main.9d90d204.css",
-    "main.js": "/resume_site/static/js/main.7a42f92f.js",
+    "main.css": "/resume_site/static/css/main.3e770a80.css",
+    "main.js": "/resume_site/static/js/main.3c0d25e4.js",
     "static/js/787.bdde258d.chunk.js": "/resume_site/static/js/787.bdde258d.chunk.js",
-    "static/media/cover-desktop.jpg": "/resume_site/static/media/cover-desktop.630c724bf91e026425a9.jpg",
     "static/media/profile_pic.JPG": "/resume_site/static/media/profile_pic.58eaf3751640040ea6e9.JPG",
-    "static/media/cover-mobile.jpg": "/resume_site/static/media/cover-mobile.9c0e587b1507cb4d84fe.jpg",
+    "static/media/cover-desktop.jpg": "/resume_site/static/media/cover-desktop.affb47939119f1a93705.jpg",
+    "static/media/cover-mobile.jpg": "/resume_site/static/media/cover-mobile.8e299f344baa0e2447a0.jpg",
     "static/media/cv.pdf": "/resume_site/static/media/cv.1db826e04980e594c6fa.pdf",
     "static/media/Scikit_learn.png": "/resume_site/static/media/Scikit_learn.bfb987221ae5f83d782b.png",
     "static/media/python.png": "/resume_site/static/media/python.98c0a18c426936f61962.png",
@@ -30,14 +30,14 @@
     "static/media/Client-Xero.png": "/resume_site/static/media/Client-Xero.5fc40d1e5c36d4a82094.png",
     "static/media/resume-site.png": "/resume_site/static/media/resume-site.27236a569021d80af21b.png",
     "static/media/nextjs.png": "/resume_site/static/media/nextjs.6db19b31cc0a2f63cff4.png",
-    "static/media/niyontron.svg": "/resume_site/static/media/niyontron.fdf8d8e52ab2a81d796cd079b676e8ee.svg",
+    "static/media/niyontron.svg": "/resume_site/static/media/niyontron.c383c97abb6e1f11ae5c303d405c796a.svg",
     "index.html": "/resume_site/index.html",
-    "main.9d90d204.css.map": "/resume_site/static/css/main.9d90d204.css.map",
-    "main.7a42f92f.js.map": "/resume_site/static/js/main.7a42f92f.js.map",
+    "main.3e770a80.css.map": "/resume_site/static/css/main.3e770a80.css.map",
+    "main.3c0d25e4.js.map": "/resume_site/static/js/main.3c0d25e4.js.map",
     "787.bdde258d.chunk.js.map": "/resume_site/static/js/787.bdde258d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9d90d204.css",
-    "static/js/main.7a42f92f.js"
+    "static/css/main.3e770a80.css",
+    "static/js/main.3c0d25e4.js"
   ]
 }
