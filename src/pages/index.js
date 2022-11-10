@@ -81,7 +81,7 @@ const ResumeSite = () => {
   return (
     <div className="flex fixed w-full h-full">
       <div
-        className="h-10 w-10 z-10 right-7 top-7 fixed bg-blue-500 rounded-full justify-center items-center flex cursor-pointer"
+        className="h-10 w-10 z-20 right-7 top-7 fixed bg-blue-500 rounded-full justify-center items-center flex cursor-pointer"
         onClick={() => setSidebar(!sidebar)}
       >
         {!sidebar ? (
@@ -95,8 +95,14 @@ const ResumeSite = () => {
         name={content.name}
         sidebar={sidebar}
         profilePic={profilePic}
+        toggleFunction={(state) => setSidebar(state)}
       />
-
+      {width < 900 && sidebar ? (
+        <div
+          className="absolute w-full h-full bg-gray-500/[.5] z-10"
+          onClick={() => setSidebar(!sidebar)}
+        />
+      ) : null}
       <div className="flex-1 flex-col overflow-y-auto">
         <img
           src={width < 900 ? cover_mobile : cover_desktop}
@@ -104,7 +110,7 @@ const ResumeSite = () => {
           className="absolute -z-20 overflow-clip object-cover h-screen w-full"
         />
         <div id="home">
-          <Home name={content.name} autoText={autoText} />
+          <Home name={content.name} autoText={autoText} cv={cv} />
         </div>
         <div id="about">
           <About profilePic={profilePic} content={content} />

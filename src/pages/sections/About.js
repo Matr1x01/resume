@@ -5,7 +5,9 @@ const About = ({ profilePic, content }) => {
     <div className="h-auto w-full bg-white p-4 flex flex-col">
       <div className="max-w-5xl w-full self-center flex flex-col pb-8">
         <div className="mt-8 flex flex-col">
-          <span className="text-3xl font-semibold text-blue-900">About</span>
+          <span className="font-mono text-3xl font-bold text-blue-900">
+            About
+          </span>
           <div className="line-1 bg-blue-300" />
         </div>
         <span className="font-light text-xl text-gray-900 leading-loose tracking-wide">

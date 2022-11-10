@@ -17,7 +17,7 @@ const contacts = [
     link: "https://www.facebook.com/a.silent.man8/",
   },
 ];
-const SideBar = ({ sidebar, profilePic, name, menus }) => {
+const SideBar = ({ sidebar, profilePic, name, menus, toggleFunction }) => {
   return (
     <div
       className={`${
@@ -25,17 +25,17 @@ const SideBar = ({ sidebar, profilePic, name, menus }) => {
       } duration-300 h-screen bg-slate-800 fixed sm:sticky top-0 z-40 select-none`}
     >
       <div className={`${!sidebar ? "hidden" : ""} flex flex-col w-full`}>
-        <img
-          src={profilePic}
-          alt="profile pic"
-          loading="lazy"
-          className="mx-auto mt-8 w-1/2 h-1/2 rounded-full border-8 border-slate-600"
-        />
+        <div className="mx-auto mt-8 w-40 h-40 rounded-full border-8 border-slate-600 overflow-hidden">
+          <img src={profilePic} alt="profile pic" loading="lazy" />
+        </div>
         <span className="my-4 text-2xl text-white font-semibold text-center mx-auto cursor-pointer">
           {name}
         </span>
         <ContactCircles contacts={contacts} />
-        <div className="flex flex-col mt-6">
+        <div
+          className="flex flex-col mt-6"
+          onClick={() => toggleFunction(false)}
+        >
           {menus.map((menu, i) => (
             <MenueTile
               key={i}

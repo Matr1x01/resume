@@ -8,7 +8,9 @@ const Contact = ({ location, phoneNumber, email }) => {
     <div className="h-auto w-full bg-white flex flex-col p-8">
       <div className="flex flex-col w-full max-w-5xl self-center">
         <div className="flex flex-col">
-          <span className="text-3xl font-semibold text-blue-900">Contact</span>
+          <span className="text-3xl font-mono font-bold text-blue-900">
+            Contact
+          </span>
           <div className="line-1 bg-blue-300" />
         </div>
         <div className="flex flex-col lg:flex-row">

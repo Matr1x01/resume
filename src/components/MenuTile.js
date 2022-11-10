@@ -4,9 +4,6 @@ import { HashLink as Link } from "react-router-hash-link";
 
 const MenueTile = ({ elementRef, title, iconActive, iconInactive, active }) => {
   const [hovering, setHovering] = useState(false);
-
-  // console.log(document?.getElementById(elementRef.slice(1))?.offsetTop);
-  // console.log(document?.getElementById(elementRef.slice(1))?.offsetHeight);
   return (
     <Link to={elementRef} smooth>
       <div

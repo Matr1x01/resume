@@ -5,7 +5,9 @@ const Resume = () => {
     <div className="h-auto w-full bg-white p-4 flex flex-col">
       <div className="flex flex-col w-full max-w-5xl self-center">
         <div className="flex flex-col">
-          <span className="text-3xl font-semibold text-blue-900">Resume</span>
+          <span className="text-3xl font-mono font-bold text-blue-900">
+            Resume
+          </span>
           <div className="line-1 bg-blue-300" />
         </div>
         <div className="w-full h-auto flex flex-col lg:flex-row">
@@ -27,8 +29,8 @@ const Resume = () => {
                   American International University-Bangladesh
                 </span>
                 <span>CGPA: 3.69 (Out of 4.00)</span>
-                <span className="mt-2 font-thin">Electives</span>
-                <ul className="list-disc font-thin">
+                <span className="mt-2 font-light">Electives</span>
+                <ul className="list-disc font-light">
                   <div className="ml-8">
                     <li>Data Warehousing and Data Mining</li>
                     <li>Human Computer Interaction</li>
@@ -54,7 +56,7 @@ const Resume = () => {
                 <span className="font-light italic my-2">
                   Undergraduate Thesis
                 </span>
-                <ul className="list-disc font-thin">
+                <ul className="list-disc font-light">
                   <div className="ml-4">
                     <li>Find Compactable MRI Dataset</li>
                     <li>Process Data</li>

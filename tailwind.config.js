@@ -2,6 +2,13 @@
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
+    fontFamily: {
+      sans: ["ui-sans-serif", "system-ui"],
+      serif: ["ui-serif", "Poppins"],
+      mono: ["ui-monospace", "Raleway"],
+      display: ["Oswald"],
+      body: ['"Poppins"'],
+    },
     extend: {},
   },
   plugins: [],

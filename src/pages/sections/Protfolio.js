@@ -30,7 +30,7 @@ const Protfolio = ({ projects, categories, cv }) => {
     <div className="h-auto w-full bg-white p-4 flex flex-col">
       <div className="flex flex-col w-full max-w-5xl self-center">
         <div className="flex flex-col">
-          <span className="text-3xl font-semibold text-blue-900">
+          <span className="text-3xl font-mono font-bold text-blue-900">
             Portfolio
           </span>
           <div className="line-1 bg-blue-300" />
@@ -60,11 +60,6 @@ const Protfolio = ({ projects, categories, cv }) => {
             </div>
           </div>
         </div>
-        <a href={cv} download="cv.pdf" className="flex w-full">
-          <div className="px-8 py-2 m-auto rounded-lg bg-blue-600 hover:bg-blue-500">
-            <span className="text-xl text-white">Download CV</span>
-          </div>
-        </a>
       </div>
     </div>
   );

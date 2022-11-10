@@ -27,7 +27,9 @@ const Skills = () => {
     <div className="h-auto w-full bg-white p-4 flex flex-col">
       <div className="max-w-5xl w-full self-center flex flex-col">
         <div className="mt-8 mb-8 flex flex-col">
-          <span className="text-3xl font-semibold text-blue-900">Skills</span>
+          <span className="text-3xl font-mono font-bold text-blue-900">
+            Skills
+          </span>
           <div className="line-1 bg-blue-300" />
         </div>
         <div>

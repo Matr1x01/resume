@@ -1,6 +1,6 @@
 const config = {
-  autoTypingSpeed: 150,
-  autoDeletingSpeed: 50,
+  autoTypingSpeed: 120,
+  autoDeletingSpeed: 30,
   autoWaitTime: 1000,
 };
 
