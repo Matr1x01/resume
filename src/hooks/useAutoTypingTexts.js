@@ -12,15 +12,16 @@ const useAutoTypingTexts = ({
   const [index, setIndex] = useState(0);
 
   useEffect(() => {
+    let timeOut;
     if (state === States.Typing) {
-      const timeOut = setTimeout(() => {
+      timeOut = setTimeout(() => {
         setAutoText(strings[index].slice(0, autoText.length + 1));
         if (autoText.length === strings[index].length) {
           setState(States.Paused);
         }
       }, writingSpeed);
     } else if (state === States.Paused) {
-      const timeOut = setTimeout(() => {
+      timeOut = setTimeout(() => {
         setState(States.Deleting);
       }, waitTime);
     } else {

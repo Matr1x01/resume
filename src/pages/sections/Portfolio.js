@@ -2,7 +2,7 @@ import React from "react";
 import CategorySelector from "../../components/CategorySelector";
 import ProjectBox from "../../components/ProjectBox";
 
-const Protfolio = ({ projects, categories, cv }) => {
+const Portfolio = ({ projects, categories, cv }) => {
   const [filteredProjects, setFilteredProjects] = React.useState(projects);
   const graduallyRender = (projects) => {
     let i = 0;
@@ -35,7 +35,7 @@ const Protfolio = ({ projects, categories, cv }) => {
           </span>
           <div className="line-1 bg-blue-300" />
         </div>
-        <div className="flex flex-col mt-4 protfolio-container">
+        <div className="flex flex-col mt-4 portfolio-container">
           <CategorySelector
             categories={categories}
             onSelect={onCategorySelect}
@@ -65,4 +65,4 @@ const Protfolio = ({ projects, categories, cv }) => {
   );
 };
 
-export default Protfolio;
+export default Portfolio;

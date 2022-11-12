@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 import useAutoTypingTexts from "../hooks/useAutoTypingTexts";
 import content from "../config/content";
 import config from "../config/config";
@@ -17,7 +17,7 @@ import { categories, projects } from "../config/projects";
 import Home from "./sections/Home";
 import About from "./sections/About";
 import Skills from "./sections/Skills";
-import Protfolio from "./sections/Protfolio";
+import Portfolio from "./sections/Portfolio";
 import Contact from "./sections/Contact";
 import profilePic from "../assets/profile_pic.JPG";
 import cover_mobile from "../assets/cover-mobile.jpg";
@@ -65,10 +65,10 @@ const ResumeSite = () => {
       ref: "#resume",
     },
     {
-      title: "Protfolio",
+      title: "Portfolio",
       iconInactive: <FiLayout className={inactiveMenuIconCss} />,
       iconActive: <FiLayout className={activeMenuIconCss} />,
-      ref: "#protfolio",
+      ref: "#portfolio",
     },
     {
       title: "Contact",
@@ -79,7 +79,7 @@ const ResumeSite = () => {
   ];
 
   return (
-    <div className="flex fixed w-full h-full">
+    <div className="flex fixed w-full h-full font-family-popins">
       <div
         className="h-10 w-10 z-20 right-7 top-7 fixed bg-blue-500 rounded-full justify-center items-center flex cursor-pointer"
         onClick={() => setSidebar(!sidebar)}
@@ -96,6 +96,7 @@ const ResumeSite = () => {
         sidebar={sidebar}
         profilePic={profilePic}
         toggleFunction={(state) => setSidebar(state)}
+        mobile={width < 900}
       />
       {width < 900 && sidebar ? (
         <div
@@ -122,8 +123,8 @@ const ResumeSite = () => {
           <Resume />
         </div>
 
-        <div id="protfolio">
-          <Protfolio categories={categories} projects={projects} cv={cv} />
+        <div id="portfolio">
+          <Portfolio categories={categories} projects={projects} cv={cv} />
         </div>
         <div id="contact">
           <Contact

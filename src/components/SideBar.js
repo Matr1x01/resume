@@ -1,7 +1,7 @@
 import React from "react";
 import ContactCircles from "./ContactCircle";
 import { FaGithub, FaLinkedinIn, FaFacebookF } from "react-icons/fa";
-import MenueTile from "./MenuTile";
+import MenuTile from "./MenuTile";
 
 const contacts = [
   {
@@ -17,7 +17,14 @@ const contacts = [
     link: "https://www.facebook.com/a.silent.man8/",
   },
 ];
-const SideBar = ({ sidebar, profilePic, name, menus, toggleFunction }) => {
+const SideBar = ({
+  sidebar,
+  profilePic,
+  name,
+  menus,
+  toggleFunction,
+  mobile,
+}) => {
   return (
     <div
       className={`${
@@ -34,10 +41,10 @@ const SideBar = ({ sidebar, profilePic, name, menus, toggleFunction }) => {
         <ContactCircles contacts={contacts} />
         <div
           className="flex flex-col mt-6"
-          onClick={() => toggleFunction(false)}
+          onClick={() => (mobile ? toggleFunction(false) : null)}
         >
           {menus.map((menu, i) => (
-            <MenueTile
+            <MenuTile
               key={i}
               active={i === -1}
               iconActive={menu.iconActive}

@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 import { HashLink as Link } from "react-router-hash-link";
 
-const MenueTile = ({ elementRef, title, iconActive, iconInactive, active }) => {
+const MenuTile = ({ elementRef, title, iconActive, iconInactive, active }) => {
   const [hovering, setHovering] = useState(false);
   return (
     <Link to={elementRef} smooth>
@@ -27,4 +27,4 @@ const MenueTile = ({ elementRef, title, iconActive, iconInactive, active }) => {
     </Link>
   );
 };
-export default MenueTile;
+export default MenuTile;
