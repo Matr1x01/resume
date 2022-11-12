@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/resume_site/static/css/main.3e770a80.css",
-    "main.js": "/resume_site/static/js/main.3cb368c2.js",
+    "main.css": "/resume_site/static/css/main.bdf52805.css",
+    "main.js": "/resume_site/static/js/main.6c475799.js",
     "static/js/787.bdde258d.chunk.js": "/resume_site/static/js/787.bdde258d.chunk.js",
     "static/media/profile_pic.JPG": "/resume_site/static/media/profile_pic.58eaf3751640040ea6e9.JPG",
     "static/media/cover-desktop.jpg": "/resume_site/static/media/cover-desktop.affb47939119f1a93705.jpg",
@@ -30,14 +30,14 @@
     "static/media/Client-Xero.png": "/resume_site/static/media/Client-Xero.5fc40d1e5c36d4a82094.png",
     "static/media/resume-site.png": "/resume_site/static/media/resume-site.27236a569021d80af21b.png",
     "static/media/nextjs.png": "/resume_site/static/media/nextjs.6db19b31cc0a2f63cff4.png",
-    "static/media/niyontron.svg": "/resume_site/static/media/niyontron.c383c97abb6e1f11ae5c303d405c796a.svg",
+    "static/media/niyontron.svg": "/resume_site/static/media/niyontron.fdf8d8e52ab2a81d796cd079b676e8ee.svg",
     "index.html": "/resume_site/index.html",
-    "main.3e770a80.css.map": "/resume_site/static/css/main.3e770a80.css.map",
-    "main.3cb368c2.js.map": "/resume_site/static/js/main.3cb368c2.js.map",
+    "main.bdf52805.css.map": "/resume_site/static/css/main.bdf52805.css.map",
+    "main.6c475799.js.map": "/resume_site/static/js/main.6c475799.js.map",
     "787.bdde258d.chunk.js.map": "/resume_site/static/js/787.bdde258d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3e770a80.css",
-    "static/js/main.3cb368c2.js"
+    "static/css/main.bdf52805.css",
+    "static/js/main.6c475799.js"
   ]
 }
